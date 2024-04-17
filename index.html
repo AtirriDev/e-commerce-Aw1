@@ -10,14 +10,26 @@
     
 </head>
 <style>
-  img{height: 200vh;;}
+  #carrusel
+  {
+    height: 300px;  
+  
+  }
+  #imagenBanner
+  {
+    height: 100%; width: 100%;
+    
+  }
+  .imagen{height: 350px;}
+  
+  
 </style>
 
 <body data-bs-theme="dark" class="bg-black">
           <nav class=" navbar navbar-expand-lg bg-body-tertiary " >
               <div class="container-fluid">
                 
-                  <a href="./index.html" class="navbar-brand text-black">Atirri Store</a>
+                  <a href="./index.html" class="navbar-brand " style="color: rgb(220, 0, 26);">Atirri Store</a>
                 
                
                
@@ -48,8 +60,8 @@
                 </ul>
                   
                 <div class="ms-auto ">
-                  <button class="btn btn-warning "><i class="bi bi-cart"></i></i></button>
-                  <button class="btn btn-danger "><i class="bi bi-box-arrow-left"></i></button>
+                  <button class="btn " style="background-color: rgb(95, 181, 0); " ><i class="bi bi-cart"></i></i></button>
+                  <button class="btn btn-danger" ><i class="bi bi-box-arrow-left" ></i></button>
                 </div>
                 
                 
@@ -59,22 +71,173 @@
             </div>
           </nav>
             
-          
-          
-          
-       
-             
-
-
-
-
-
-
-
-
-
+          <div class="contenedor-carrusel ">
+            
+            <div id="carouselExampleIndicators" class="carousel slide" >
+              <div class="carousel-indicators" >
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner carousel-fade">
+                
+                <div class="carousel-item active" id="carrusel">
+                  <img src="https://todoloquepasa.com.ar/wp-content/uploads/2023/05/image-52.png" class="d-block w-100" alt="..." id="imagenBanner">
+                </div>
+                <div class="carousel-item" id="carrusel">
+                  <img src="https://www.devre.la/media/wysiwyg/banner_desktop_77_.jpg" class="d-block w-100" alt="..." id="imagenBanner" >
+                </div>
+                <div class="carousel-item" id="carrusel">
+                  <img src="https://d2r9epyceweg5n.cloudfront.net/stores/165/834/themes/idea/1-slide-1681225655483-966381276-9cc8a83df17725d70fe36235ef42d58c1681225658-1920-1920.webp?1456679331" class="d-block w-100" alt="..." id="imagenBanner">
+                </div>
+              </div>
+              
             </div>
-          </div> 
+
+             <!-- <img src="https://todoloquepasa.com.ar/wp-content/uploads/2023/05/image-52.png" alt="" class="imagenBanner"> -->
+
+         </div>
+
+             <div class="container pt-5 text-center">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4  g-2 ">
+                  <div class="col" id="Card">
+                      
+                    <div class="card ">
+                            <img class="imagen"  src="https://http2.mlstatic.com/D_NQ_NP_826032-MLA73028709156_112023-O.webp" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title rounded">Remera Zion</h5> 
+                                <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                            </div>
+                            <div class="card-footer">
+                              <div class="row text-center">
+                                  <div class="col">
+                                    <p class="price">$10000</p>
+                                  </div>
+                                  <div class="col">
+                                    <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                      </div>
+
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                            <img class="imagen" src="https://i.pinimg.com/236x/aa/38/b2/aa38b2d2d0b170051b393dc5f45a2b58.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title rounded">Zapatillas Neon</h5> 
+                                <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                            </div>
+                            <div class="card-footer">
+                              <div class="row text-center">
+                                  <div class="col">
+                                    <p class="price">$25000</p>
+                                  </div>
+                                  <div class="col">
+                                    <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="imagen" src="https://http2.mlstatic.com/D_NQ_NP_743220-MLA72125697197_102023-O.webp" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title rounded">Collar Neptuno white</h5> 
+                          <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                              <p class="price">$5000</p>
+                            </div>
+                            <div class="col">
+                              <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                            </div>
+                        </div>
+                        
+                        
+                      </div>
+                </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="imagen" src="https://m.media-amazon.com/images/I/714MdJkY3dL._AC_SL1500_.jpg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title rounded">Pantalon Biggie</h5> 
+                          <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                              <p class="price">$25000</p>
+                            </div>
+                            <div class="col">
+                              <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                            </div>
+                        </div>
+                        
+                        
+                      </div>
+                </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="imagen" src="https://m.media-amazon.com/images/I/81zyRGZFabL._AC_SL1500_.jpg" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title rounded">Jacket Onhix</h5> 
+                          <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                              <p class="price">$51000</p>
+                            </div>
+                            <div class="col">
+                              <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                            </div>
+                        </div>
+                        
+                        
+                      </div>
+                </div>
+                  </div>
+                  <div class="col mb-5">
+                    <div class="card">
+                      <img class="imagen" src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/58d8016edf5e572d5e9d2d59556c7db9.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title rounded">Short 23</h5> 
+                          <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col">
+                              <p class="price">$15000</p>
+                            </div>
+                            <div class="col">
+                              <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                            </div>
+                        </div>
+                        
+                        
+                      </div>
+                </div>
+                  </div>
+              </div>
+
+          
+
+              
+         
+           
+
+          
+          
             
 
           

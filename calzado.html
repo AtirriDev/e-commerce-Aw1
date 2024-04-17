@@ -9,11 +9,24 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
      
 </head>
+<style> 
+  *{ margin:0}
+  .card{ text-align: center; height: 600px; }
+  .imagen{height: 350px; }
+  #slider { height: 600px;  }
+  
+  
+
+</style>
+
+
+
+
 <body class="bg-black" data-bs-theme="dark">
   <nav class=" navbar navbar-expand-lg bg-body-tertiary " >
     <div class="container-fluid">
       
-        <a href="./index.html" class="navbar-brand text-black">Atirri Store</a>
+      <a href="./index.html" class="navbar-brand " style="color: rgb(220, 0, 26);">Atirri Store</a>
       
      
      
@@ -25,15 +38,15 @@
     <div class="collapse navbar-collapse  " id="navbarCollapse">
       <ul class="navbar-nav">
           <li class="nav-item">
-              <a href="./index.html" class="nav-link active ">Home</a>
+              <a href="./index.html" class="nav-link  ">Home</a>
           </li>
           
           <li class="nav-item">
-            <a href="./indumentaria.html" class="nav-link  ">Indumentaria</a>
+            <a href="./indumentaria.html" class="nav-link ">Indumentaria</a>
           </li>
           
           <li class="nav-item">
-            <a href="./calzado.html" class="nav-link  ">Calzado</a>
+            <a href="./calzado.html" class="nav-link active ">Calzado</a>
           </li>
           
           <li class="nav-item">
@@ -44,7 +57,7 @@
       </ul>
         
       <div class="ms-auto ">
-        <button class="btn btn-warning "><i class="bi bi-cart"></i></i></button>
+        <button class="btn " style="background-color: rgb(95, 181, 0); " ><i class="bi bi-cart"></i></i></button>
         <button class="btn btn-danger "><i class="bi bi-box-arrow-left"></i></button>
       </div>
       
@@ -55,10 +68,391 @@
   </div>
 </nav>
       
-      <div class="container" id="Contenido">
-        <h2 class="h4 text-white py-4">Calzado</h2>
-      </div>
+    
+<div class="container pt-3 ">
+    <div class="row">
+      <h1 class="text-white">Ofertas</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3  g-2 ">
       
+      
+      <div class="col ">
+
+        <div  class="carousel slide" data-bs-ride="carousel" id="slider"  > 
+
+          
+
+          <div class="carousel-inner"  id="slider"> 
+
+              <div class="carousel-item active ">
+                      <div class="card" >
+                        <img class="imagen"  src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/Zapatillas_OZWEEGO_Negro_EE6999_01_standard.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title rounded">Adidas OZWEEGO</h5> 
+                            <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="row text-center">
+                              <div class="col">
+                                <p class="price">$50000</p>
+                              </div>
+                              <div class="col">
+                                <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                              </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+              </div> 
+              
+              <div class="carousel-item  ">
+                <div class="card " >
+                  <img class="imagen"  src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwe441ad71/products/ADHQ6773/ADHQ6773-1.JPG" alt="">
+                  <div class="card-body">
+                      <h5 class="card-title rounded">Adidas Adi2000 X</h5> 
+                      <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row text-center">
+                        <div class="col">
+                          <p class="price">$50000</p>
+                        </div>
+                        <div class="col">
+                          <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                        </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div> 
+
+
+          </div>
+         
+         
+       
+        </div>
+      </div>
+                  
+      <div class="col ">
+
+        <div  class="carousel slide" data-bs-ride="carousel" id="slider"  > 
+
+          
+
+          <div class="carousel-inner"  id="slider"> 
+
+              <div class="carousel-item active ">
+                      <div class="card" >
+                        <img class="imagen"  src="https://nikearprod.vtexassets.com/arquivos/ids/731907/DZ2522_100_A_PREM.jpg?v=638308289486970000" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title rounded">Nike Air Force 1</h5> 
+                            <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="row text-center">
+                              <div class="col">
+                                <p class="price">$50000</p>
+                              </div>
+                              <div class="col">
+                                <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                              </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+              </div> 
+              
+              <div class="carousel-item  ">
+                <div class="card " >
+                  <img class="imagen"  src="https://nikearprod.vtexassets.com/arquivos/ids/455393/DZ0482_001_A_PREM.jpg?v=638149325201670000" alt="">
+                  <div class="card-body">
+                      <h5 class="card-title rounded">Nike Air Max 1 Premium</h5> 
+                      <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row text-center">
+                        <div class="col">
+                          <p class="price">$50000</p>
+                        </div>
+                        <div class="col">
+                          <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                        </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div> 
+
+
+          </div>
+         
+         
+       
+        </div>
+      </div>
+     
+      <div class="col ">
+
+        <div  class="carousel slide" data-bs-ride="carousel" id="slider"  > 
+
+          
+
+          <div class="carousel-inner"  id="slider"> 
+
+              <div class="carousel-item active ">
+                      <div class="card" >
+                        <img class="imagen"  src="https://newsport.vtexassets.com/arquivos/ids/17323926-800-auto?v=638342663125170000&width=800&height=auto&aspect=true" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title rounded">Puma Ca Pro Classic</h5> 
+                            <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="row text-center">
+                              <div class="col">
+                                <p class="price">$35000</p>
+                              </div>
+                              <div class="col">
+                                <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                              </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+              </div> 
+              
+              <div class="carousel-item  ">
+                <div class="card " >
+                  <img class="imagen"  src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwc4e894d0/products/PU390048-03/PU390048-03-1.JPG" alt="">
+                  <div class="card-body">
+                      <h5 class="card-title rounded">Puma Rs- x Efect</h5> 
+                      <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row text-center">
+                        <div class="col">
+                          <p class="price">$50000</p>
+                        </div>
+                        <div class="col">
+                          <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                        </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div> 
+
+
+          </div>
+         
+         
+       
+        </div>
+      </div>
+    </div> 
+
+    <div class="row">
+      <h4 class="text-danger" >Todos el calzado</h5>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4  g-2 mb-4 ">
+      <div class="col" id="Card">
+          
+        <div class="card ">
+                <img class="imagen"  src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/Zapatillas_OZWEEGO_Negro_EE6999_01_standard.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title rounded">Adidas OZWEEGO</h5> 
+                    <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                      <div class="col">
+                        <p class="price">$10000</p>
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                      </div>
+                  </div>
+                  
+                  
+                </div>
+          </div>
+
+      </div>
+      <div class="col">
+        <div class="card">
+                <img class="imagen" src="https://i.pinimg.com/236x/aa/38/b2/aa38b2d2d0b170051b393dc5f45a2b58.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title rounded">Zapatillas Neon</h5> 
+                    <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                      <div class="col">
+                        <p class="price">$25000</p>
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                      </div>
+                  </div>
+                  
+                  
+                </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="imagen" src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwe441ad71/products/ADHQ6773/ADHQ6773-1.JPG" alt="">
+          <div class="card-body">
+              <h5 class="card-title rounded">Adidas Adi2000 X</h5> 
+              <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+          </div>
+          <div class="card-footer">
+            <div class="row text-center">
+                <div class="col">
+                  <p class="price">$5000</p>
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                </div>
+            </div>
+            
+            
+          </div>
+    </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="imagen" src="https://nikearprod.vtexassets.com/arquivos/ids/731907/DZ2522_100_A_PREM.jpg?v=638308289486970000" alt="">
+          <div class="card-body">
+              <h5 class="card-title rounded">Nike Air Force 1</h5> 
+              <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+          </div>
+          <div class="card-footer">
+            <div class="row text-center">
+                <div class="col">
+                  <p class="price">$25000</p>
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                </div>
+            </div>
+            
+            
+          </div>
+    </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="imagen" src="https://nikearprod.vtexassets.com/arquivos/ids/455393/DZ0482_001_A_PREM.jpg?v=638149325201670000" alt="">
+          <div class="card-body">
+              <h5 class="card-title rounded">Nike Air Max 1 Premium</h5> 
+              <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+          </div>
+          <div class="card-footer">
+            <div class="row text-center">
+                <div class="col">
+                  <p class="price">$51000</p>
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                </div>
+            </div>
+            
+            
+          </div>
+    </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img class="imagen" src="https://newsport.vtexassets.com/arquivos/ids/17323926-800-auto?v=638342663125170000&width=800&height=auto&aspect=true" alt="">
+          <div class="card-body">
+              <h5 class="card-title rounded">Puma Ca Pro Classic</h5> 
+              <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+          </div>
+          <div class="card-footer">
+            <div class="row text-center">
+                <div class="col">
+                  <p class="price">$15000</p>
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                </div>
+            </div>
+            
+            
+          </div>
+       </div>
+      </div>
+      <div class="col" id="Card">
+          
+        <div class="card ">
+                <img class="imagen"  src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwc4e894d0/products/PU390048-03/PU390048-03-1.JPG"" alt="">
+                <div class="card-body">
+                    <h5 class="card-title rounded">Puma Rs- x Efect</h5> 
+                    <p class="card-text">Descriocion Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ullam aliquam inventore soluta doloremque earum nam fuga?</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row text-center">
+                      <div class="col">
+                        <p class="price">$10000</p>
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1">
+                      </div>
+                  </div>
+                  
+                  
+                </div>
+          </div>
+
+      </div>
+  </div>
+</div>        
+           
+                
+           
+        
+
+          
+          
+     
+        
+
+            
+             
+       
+     
+     
+     
+     
+      
+
+
+
+         
+      
+     
+      
+        
+            
+      
+            
+       
+            
+            
+          
+          
+        
+
+         
+
+     
       
       <!-- link de js -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
