@@ -7,13 +7,17 @@
      <!-- link de bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="estilos.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
-<body class="bg-black" data-bs-theme="dark">
-  <nav class=" navbar navbar-expand-lg bg-body-tertiary " >
-    <div class="container-fluid">
+<body >
       
-      <a href="./index.html" class="navbar-brand " style="color: rgb(220, 0, 26);">Atirri Store</a>
+  <div  id="Cuerpo"> 
+    <nav class=" navbar navbar-expand-lg  " id="botonNav">
+    
+      
+      <a href="./index.html" class="navbar-brand" ><img src="./Imagenes/LOGO.png" alt=""></a>
       
      
      
@@ -24,40 +28,311 @@
     
     <div class="collapse navbar-collapse  " id="navbarCollapse">
       <ul class="navbar-nav">
-          <li class="nav-item">
-              <a href="./index.html" class="nav-link ">Home</a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="./indumentaria.html" class="nav-link  ">Indumentaria</a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="./calzado.html" class="nav-link  ">Calzado</a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="./accesorios.html" class="nav-link active ">Accesorios</a>
-          </li>
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link"> <i class="fa-solid fa-house-crack ico"></i> Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="./indumentaria.html" class="nav-link active "><i class="fa-solid fa-shirt"></i> Indumentaria</a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="./calzado.html" class="nav-link  "><i class="fa-solid fa-shoe-prints"></i> Calzado</a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="./accesorios.html" class="nav-link  "><i class="fa-regular fa-gem"></i> Accesorios</a>
+      </li>
         
        
       </ul>
         
       <div class="ms-auto ">
-        <button class="btn " style="background-color: rgb(95, 181, 0); " ><i class="bi bi-cart"></i></i></button>
-        <button class="btn btn-danger "><i class="bi bi-box-arrow-left"></i></button>
+        <button class="btn" id="btnCarrito"><i class="bi bi-cart"></i></i></button>
+        <a href="./login.html" class="btn bi bi-box-arrow-left" id="btnLogin"></a>
       </div>
       
       
       
       
     </div>
-  </div>
-</nav>
-      
-      <div class="container" id="Contenido">
-        <h2 class="h4 text-white py-4">Accesorios</h2>
+ 
+    </nav>
+    
+      <div class="slider">
+        <div class="slide-track">
+           
+        <div class="slide">
+            <img src="https://i.pinimg.com/originals/ec/0c/03/ec0c0362a4e584dab2a16a3a61107d32.jpg" alt="">
+        </div>
+        
+        <div class="slide">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAAdVBMVEX///8AAABBQUEODg7g4OCQkJDX19c9PT36+vrGxsZSUlKkpKS2trZjY2MyMjKxsbFLS0vAwMDz8/Pq6up5eXmdnZ3k5OSAgIDIyMgsLCyZmZlwcHBoaGjt7e0WFhbR0dEkJCRaWlqLi4sbGxswMDB1dXUnJyc55gsCAAAGfElEQVR4nO2d2XaqMBRAQVFRVBDFqmid2v7/J5ZEEAiBDCSK4eyHri6LCftCxpPkWhYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfDAH9MNfac3D+brbgaM1Cxk8O0Y/7FBfFuHRxpz0ZSFHck/RKvnxqy0Hz0750paFHLfsxuy1phyuzxyumnKQ5GznDOJopzyD03eeQaw89Ra4I5tk5ist+Nti2r7KlFsyrphjjmdlOZxKCbvK0m1PQHe37aWiFs/9LqbqqUlUDXXqCfupigxmxST1NSQS7BrcbRVdkaizT71ZPWHTMoN1Ia1YY9dJnDlLPaFdsc+rk3ir6KYVMeBwtxctquZVlsivrl6TNF887rYt39u5PxK4jBXetCqufPKynfC0TLWtNDTBU+IT9nKv7AV/ea74npXh8MnbMm39FH9TXQ9ROY9O7XeTN+YmnnTQ6aeOCCM/eaPXB5b8TDRhPIbpaFknYBb9u+CcC2pFvvXcq2pc5msvWHTRN9RPBmghZLsLFV7f7twsDcl25R2i+ZgYddQx4k94mVzesX5sCWfztGLX9BjuUShqPzo1QUWwYapW4a3uF91+7EcJ9aRzzjUURQ3cQreAPGemZg08MxrosXdxBJNyY0rWwR7To3/X4AUOssQPkZlEqWcO7Ia23BDgVfgPj+S3+V5U/qd5YIdqkm536SbIYoJ/3VWmcNanv0b7qCFh3FXo1MRkFVQhZb2VcVw0w3335imtv9qq7PFCdSkKQWM7LxRK178SD7U2cPFgQX/xH+qfMYAr4qx8f563YQx56hRkOgnYuclJYVjy9oJ4853l43OJqY7OcW0Sx9xHuf446ypO3njL6uCaxw42B887bJ7joWHXKzpOfB75MsNORZ/asF4Kqk8MeeoYj+1b4PNat2a4JnUe6F2l9xZWCz51Exq3Ku70xhO47fCovSXbqXf7XcwGk59aeZNqujqciD6/aVpdVwM9lmNM686AVgN2fOSujuqyTEM68zxQ5Du3UFwb1XFup2PuSqkGMXtS0yMqb/3fu+/odVQj933o3qRUIjzm9msrrEn3/lR2xEJxuzlwYRorwr1HFX1lC0KHI+/qIeZ1BoJfrzQUZYZHh34hniMiZtSW6aVjzsmWnCDfyOSOmsKzwbzh7veC7kPmfc253dPRhMAsW062LuzEuvBYvPvyDYjGn9nuaYyL+LDeXXJRSRqZrZ+YySjV5qV5jKF69y8x9ys7RSr4y8ytNNmFKefav6hxn4i5c9w9FVyxMNcW20SstRS/V+++fI077pFShuUVyguuCn9o+c4HcXwl82rrviD7XyjN6io7uvu+2maU3YvbENq5r6zqpoaW7iFl+yuqr8h/Eao7upCcpSAW2hVuQnC6knCfU26gnTtuuYmQ8gV9Rg5FaO64xSafBbnIMC/ygh16mjsR/23nvqNciFfHkuNvmvuCdmFlgWUetxEbwWt3n+p3zzbEiS6hNsI9n7sTGsIb4V6oOwS2GRjiXjjh4cK/zMwQdyucPP/eO/fCdgzuJRjmuD/Ds9xBSYPcs0LP3cMxyT3tPnLvHTfQnXvqStadpvR2999CSn1zT0c1vNuFjHLPmjnOnq1R7s/oZA/dPfYlxrpP0yvuXOpmuWeBDc7BnFHuVrq5jrNHb5a7V8izb+5p5r187ulseD/drTE60YnzaE7T3C3rHI04YxQ0dyIM9GHu/BDufhiuyX1573R3wzAklyPocqfxRncq4P4a90GP3Uc9dnf7655mZb77MihzjbKQ9lvc78FgEJDbInW51/eE3+J+pKX4dD/fjr9+iw0DtH5dd9yb+nXryz1azTdCUWdD3LfpiMUdCB/n+fHuSfE8zK6j5JVfHnrm7s1QGOYLrSdcy24SknXHpYxYIPhK9/0ucV9aZ3RK4UByo4ysO2oRyMXir3RH6wg3f84ChSFukqceSLtTeKm7i0NQ+Givg+SJ5R/rnvzcTGYX9Hssuf1bpTv3gE+BezzC5R3vt5A9mZTbnXm+VrZH6zXu2+Slj4fWLql0D7JHVHK7T20mzgvdrcO3FaKTzE8r6dMeiHQbWgvmEMunpqitTzuyUV9+G8ufxTso0fhfGp3jQQObbIixLKeITxH3Sx9O8JJf96d04Q/+flS+EJcid1+6cJ+5Ovhszj5tBAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABI/gE0e2cVlFCUAAAAAABJRU5ErkJggg==" alt="">
+        </div>
+  
+        <div class="slide">
+            <img src="https://1000marcas.net/wp-content/uploads/2021/05/New-Era-Logo.png" alt="">
+        </div>
+        
+        <div class="slide">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+  
+        <div class="slide">
+          <img src="https://i.pinimg.com/originals/ec/0c/03/ec0c0362a4e584dab2a16a3a61107d32.jpg" alt="">
       </div>
+      
+      <div class="slide">
+          <img src="data:image/png;base64,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" alt="">
+      </div>
+  
+      <div class="slide">
+          <img src="https://1000marcas.net/wp-content/uploads/2021/05/New-Era-Logo.png" alt="">
+      </div>
+      
+      <div class="slide">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADqCAMAAAD3THt5AAAAeFBMVEX///8AAADT09Ps7Ozm5ubi4uLe3t6RkZGgoKC4uLj7+/u8vLz39/fa2tqCgoKjo6NdXV2srKxvb2+Xl5dVVVU9PT0vLy/Nzc1EREQqKipjY2OJiYlLS0tQUFBnZ2fCwsIXFxchISF6enqEhIQQEBA2NjYTExMjIyOh6Rx/AAAHOUlEQVR4nO2da3eyMAyARfGGuHmZsr26OZnO//8P34EgFZJStJC2J8+nne2cmdCS5tbY6zEMwzAMwzAMwzAMwzAMwzAMw1zpT17i8TSkFkM3r17G14BaFJ0MPryCV2pp9DHw7thRy6MNr8SUWiBNvJQV89wwIWFFL29MLZMWXquKedQyaWEBKOZTC6WDb0CxA7VQOgD0csMunlxdsX+AYkNqoXTgrFXsV/VyxKmqKuaG51F1qZbUEmmi5Nx7MbVA2ljd6bWmFkcf4pJ9OmHpc65v2Wb1snQqMdDrzVLF+tRi6Ocaku2pxWiBfaLYkVqKFkj9xX/UUrTA0aVzWeD6js2pxdDPIVXMMVOfMHYnVrln76piV8eDWgr9XENNB639OlXshVoM7fSdC1cy3tyKmwvySIxaDt0cXFUsz+W4k+rIyFPcrhkPP892OFGIEFjmirmWGZjmigXUkmhmn+nlmqsY5Qs2opZEM3tHTUfo6oLdimPUguhm7qjp6A0zxX6oBdHNOlPMiTYBkbx7xbXTOX/FFtSC6Gbsxk6MJuPl/XmVtcx+k4iji8yNvwgp+rxG+0Yn1fPkvpPnRbff5Z79ilCuZxH7tG/5qC/7g+c3T2SVFVaqa2gbM6/EKTm4btpSi/c427JiSTHsnP98phbvYcpNRV7SqF30AtvrAR+qinnT4kd7+yCmgGIC9jpUNYrZG7OM5IrNqOV7nLNUMYsbSqVLZnWZRfaW2Z15k2hGLdqTVLyqHNt70ceYYrb3ykJXWFzYieiCWd5+ierlXahFe4Jw+YbqZfNWhK4bCVjrd0zkelmbF/Br9LI2k/Nep5ilYSbqcBRQi/gY9XrZGY7tFBSzMUkFpKcALKy1rOq1SqAWszFqC2bh0BXFBfO+qQVtCO75lrHr9kdUr1COXW6Vul525XNq0r93WGU9BCcxXuM6pdg0JCcQ5BYaZGFsuv5RLNg+sXnV0p+IRdX1YvzIdbCPPCz7IpZWneKlyhdDmiCwpkImHGG3fKgLigmGo7juJlPMlktxQratcJZkhtES4yEczeIBVR1ed8OOCzvCRrwLjoGpP5D+5iIEK3fJUGAsX44VLtX8Ju6plOTFD2krkgM3l+O93OiLe4w2XCe4HWHVSiWeKSCQszHZgp2A62Cowd92L2ZjsjcMst+4VbTB2l+bRgEXKYjQYq0NAXSIvTPSeNqCyZ5xKmg1Gy/PMJp/Pi8xW1CTG+he0mZk+w0on3zJFTP8JctrYcCfPuWKme1T5XpBmZk6xbxvc52PW+seVMiT9UNkGJoNHhQ+/YOKGXmHzBeDSMh415bYPdMsSH/6+vNWK2BtTwS20nRk7SkbYcmqKzaHNSlBIL2UYBQNe8PsFtVnckQv7sffHCTJDoGjgUNz+sklqrj/m/gc6eoIoXNwVFIrxbjTbPYZR6nfkSbb+lNx7h40ahvHyP6j1REYJKhahr4x6V7wB/DxGAzHLLMPAt1CUmBjenxW16mIY/Z+VOmjwjD5AnH8hF5/p5qxrR9qp7IEQ2e1qnfloBgZx9R0CahhllecIqkYJUDfQQNhXK1CUjDy0hv5vkrg+cfX2qw3bS+RNXN056q+1qdBFw4kL5h48s5Wag6XIeGMP8HXouK7DyZHBc3OBrhYgSRKicFN1a/JpcJPpGtCfHO9ozf7wrreuD+2tIs2wKvM8jMpql82wug6wm14vVRhrcu8JzKPB3y11IKQoDbKoTivI1ytBtY6qokIOu/XHKGJ3lPTQ2i03EHfZpix7TSYCdDnvH3QjR2+ro7Iv+xwO6LV5cVTA3JHH/B/7Wo7hljla/f0rkHM0aYT64he6NMSJSJZrg48fswtfNf0VAPYkLTtFg+Q10CnawdHCu228mBh8lHrvAf/CG4JnR9RArOG2udzgPv91NqJhrjkHy1U/+FH2NK09R9Yr3Z8cP8X+qxWklhwOhQOJXUAWscWMvxgjLFo05EDXf+F7g4K6FM2LX/DAGyD9bqOwMu87yAfDSV+ChM8XT1tjgF72FGyxb+UPzjfJoNvb/LwC5751cB6dZeurURI08S9CqfPDJ8cJPZ1MKx6pp3ekao+1s28v71vxFp/XBptocsuuStVqQ91nKiFzzRhz1wDjiY+188HYA5P3Q8CA860OBxcz5qgn/21yQjAiVf15klqxQrFtyYLFoKzY2kY+hupXk3m8FRmP55nC8o6iCxT12gflb0o8umBeJaukZle3pVXL5EBfa5YGkn9wqe/LlmNNuPXBsAZF7UjLIyWZa08758pzSXQe6bkFsMVEINuY1dkO6s88wApNBhU7R6WRFMLPZFKg1GdaXfja1aKjxxUKzbsG+uK+PNXOY0E1cnNGwqQH0MNbvUD/TW6UtcayRzHRk5QNc1g4kzfVLCGuY9yVGdko10S+DYO4bMq0c7/cz8ORqr1x+qRWmCw/InXpjgaDMMwDMMwDMMwDMMwDMMwDMO4wn/7lUOeHLPbewAAAABJRU5ErkJggg==" alt="">
+      </div>
+  
+      <div class="slide">
+        <img src="https://i.pinimg.com/originals/ec/0c/03/ec0c0362a4e584dab2a16a3a61107d32.jpg" alt="">
+    </div>
+    
+    <div class="slide">
+        <img src="data:image/png;base64,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" alt="">
+    </div>
+  
+    <div class="slide">
+        <img src="https://1000marcas.net/wp-content/uploads/2021/05/New-Era-Logo.png" alt="">
+    </div>
+    
+    <div class="slide">
+        <img src="data:image/png;base64,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" alt="">
+    </div>
+  
+        
+  
+  
+        </div>
+      </div> 
+    
+   
+   
+   
+    <div class="titulo">
+      <h5>Todo en Accesorios</h5>
+    </div>
+
+
+
+
+    <div class="container mb-5" >
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4   ">
+            
+          
+          <div class="col">
+                <div class="Card" >
+                  <div class="text-center">
+                    <img class="imagenes" src="https://www.tripstore.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/6/2/629243-459_0.jpg" alt="" >
+                  </div>
+                    
+                    <div class="card-body">
+                        <h5>Nike</h5>
+                        <h4><b>GORRA SB aero</b></h4>
+                    </div>
+                    <div class="card-footer">
+                      <div >
+                        <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                          <h5 class="price">$50000</h5>
+                          <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+                        </div>
+                      </div>
+                    </div>
+                    <div >
+                      <button class="btn" id="Comprar">COMPRAR</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="Card" >
+                <div class="text-center">
+                  <img class="imagenes" src="https://media2.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/m/e/medias-ca-a-alta-adidas-3-tiras-100040dz9345001-1.jpg" alt="" >
+                </div>
+                  
+                  <div class="card-body">
+                      <h5>Adidas</h5>
+                      <h4><b>MEDIAS 3/4 Pack x3 </b></h4>
+                  </div>
+                  <div class="card-footer">
+                    <div >
+                      <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                        <h5 class="price">$50000</h5>
+                        <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+                      </div>
+                    </div>
+                  </div>
+                  <div >
+                    <button class="btn" id="Comprar">COMPRAR</button>
+                  </div>
+                  
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="Card" >
+              <div class="text-center">
+                <img class="imagenes" src="https://http2.mlstatic.com/D_NQ_NP_712244-MLA53487913783_012023-O.webp" alt="" >
+              </div>
+                
+                <div class="card-body">
+                    <h5>Accesorios</h5>
+                    <h4><b>COLLAR Neptuno</b></h4>
+                </div>
+                <div class="card-footer">
+                  <div >
+                    <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                      <h5 class="price">$50000</h5>
+                      <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+                    </div>
+                  </div>
+                </div>
+                <div >
+                  <button class="btn" id="Comprar">COMPRAR</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="Card" >
+            <div class="text-center">
+              <img class="imagenes" src="https://www.digitalsport.com.ar/files/products/661ffde9dd5d2-648066-500x500.jpg" alt="" >
+            </div>
+              
+              <div class="card-body">
+                  <h5>Revolver</h5>
+                  <h4><b>BUFANDA RvR</b></h4>
+              </div>
+              <div class="card-footer">
+                <div >
+                  <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                    <h5 class="price">$50000</h5>
+                    <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+                  </div>
+                </div>
+              </div>
+              <div >
+                <button class="btn" id="Comprar">COMPRAR</button>
+              </div>
+              
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="Card" >
+          <div class="text-center">
+            <img class="imagenes" src="https://www.digitalsport.com.ar/files/products/65a92cb204027-624720-500x500.jpg" alt="" >
+          </div>
+          
+          <div class="card-body">
+              <h5>Puma</h5>
+              <h4><b>MORRAL Cross Body</b></h4>
+          </div>
+          <div class="card-footer">
+            <div >
+              <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                <h5 class="price">$50000</h5>
+                <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+              </div>
+            </div>
+          </div>
+          <div >
+            <button class="btn" id="Comprar">COMPRAR</button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="Card" >
+          <div class="text-center">
+            <img class="imagenes" src="https://www.digitalsport.com.ar/files/products/662c3eefe968b-651630-500x500.jpg" alt="" >
+          </div>
+            
+            <div class="card-body">
+                <h5>New Era</h5>
+                <h4><b>GORRA Fish Koi</b></h4>
+            </div>
+            <div class="card-footer">
+              <div >
+                <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                  <h5 class="price">$50000</h5>
+                  <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+                </div>
+              </div>
+            </div>
+            <div >
+              <button class="btn" id="Comprar">COMPRAR</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="Card" >
+        <div class="text-center">
+          <img class="imagenes" src="https://www.tripstore.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/7/A/7A0654-W0J_1.jpg" alt="" >
+        </div>
+          
+          <div class="card-body">
+              <h5>Jordan</h5>
+              <h4><b>MOCHILA Air jordan</b></h4>
+          </div>
+          <div class="card-footer">
+            <div >
+              <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
+                <h5 class="price">$50000</h5>
+                <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+              </div>
+            </div>
+          </div>
+          <div >
+            <button class="btn" id="Comprar">COMPRAR</button>
+          </div>
+          
+      </div>
+  </div>
+
+
+      
+           
+        </div>
+           
+
+
+
+
+      
+                          
+                        
+                        
+                   
+
+
+
+
+
+
+
+   </div>
+  
+  
+  
+   
+  </div>  
+  
        <!-- link de js -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
