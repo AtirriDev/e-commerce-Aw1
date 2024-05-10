@@ -8,7 +8,7 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box;font-family:'Salsa',sans-serif; }
 
-.container-fluid{ height: 100vh; background: url(./Imagenes/fondo\ login.png) ; justify-content: center;position: relative ;}
+.container-fluid{ height: 100vh; background: url(./Imagenes/backgroundNegro.png) ; justify-content: center;position: relative ;}
 .card{ 
     text-align: center;
     position: absolute; 
@@ -30,3 +30,9 @@ img{width: 60%;}
 
    
 
+#lblfecha{margin-right: 180px;}
+
+.modal--show
+{
+    
+}
