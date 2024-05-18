@@ -9,15 +9,29 @@ window.addEventListener(`load` , () => {
 
 fetch('./Productos.json').then(resp => resp.json()).then(productos =>{
     console.log(productos)
+    const Calzado = productos.filter(producto => producto.Categoria === 'Calzado');
     const Accesorios = productos.filter(producto => producto.Categoria === 'Accesorios');
-    console.log(Accesorios)
+    const Indumentaria = productos.filter(producto => producto.Categoria === 'Indumentaria');
+   
+    let calselecc = Calzado.slice(0,3)
+    let Accselecc = Accesorios.slice(0,3)
+    let Indselecc = Indumentaria.slice(0,3)
+   
+    const Prodhome = calselecc.concat(Accselecc,Indselecc)
+    
+    
+   
+    console.log(Prodhome)
+    
+    
+    
     let CardAcc = `
 
 
 
     ${
         
-      Accesorios.map(e=>{  
+      Prodhome.map(e=>{  
         contCardAcc.innerHTML +=`
                 
         <div class="col">
@@ -56,3 +70,25 @@ fetch('./Productos.json').then(resp => resp.json()).then(productos =>{
       
 `
 })
+    
+
+
+ 
+           
+            
+            
+           
+        
+      
+       
+         
+    
+
+      
+
+
+
+
+        
+                       
+               
