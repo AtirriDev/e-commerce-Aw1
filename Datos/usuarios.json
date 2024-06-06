@@ -1,0 +1,34 @@
+[
+    {
+      "nombre": "German",
+      "apellido": "Perez",
+      "pass": "Ger123",
+      "Nacimiento":"16/08/1992",
+      "email": "German@ejemplo.com",
+      "img": "https://i.pinimg.com/280x280_RS/66/a1/a4/66a1a4a22e271ec3ee3ef35ba0883ca4.jpg"
+    },
+    {
+      "nombre": "Pablo",
+      "apellido": "Garcia",
+      "pass": "pab456",
+      "email": "Pablo@ejemplo.com",
+      "img": "https://i.pinimg.com/280x280_RS/66/a1/a4/66a1a4a22e271ec3ee3ef35ba0883ca4.jpg"
+    },
+    {
+      "nombre": "Romina",
+      "apellido": "Alvarez",
+      "Nacimiento":"05/06/1982",
+      "pass": "romi789",
+      "email": "Romi@ejemplo.com",
+      "img": "https://i.pinimg.com/280x280_RS/66/a1/a4/66a1a4a22e271ec3ee3ef35ba0883ca4.jpg"
+    },
+    {
+      "nombre": "Florencia",
+      "apellido": "Macaño",
+      "Nacimiento":"18/12/1998",
+      "pass": "flor159",
+      "email": "Flor@ejemplo.com",
+      "img": "https://i.pinimg.com/280x280_RS/66/a1/a4/66a1a4a22e271ec3ee3ef35ba0883ca4.jpg"
+    }
+ 
+]
