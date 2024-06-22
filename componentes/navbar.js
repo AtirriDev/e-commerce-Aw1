@@ -52,8 +52,9 @@ export const navbar = `
   
         <div class="ms-auto ">
             
-            <button class="btn" id="btnCarrito"><i class="bi bi-cart"></i></i></button>
+            <a href="./carrito.html" class="btn bi bi bi-cart" id="btnCarrito"></a>
             <a href="../index.html" class="btn bi bi-box-arrow-left" id="btnLogOut"></a>
+           
         </div>
 
 

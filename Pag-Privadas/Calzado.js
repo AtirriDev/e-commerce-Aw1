@@ -10,9 +10,9 @@ window.addEventListener(`load` , () => {
 })
 
 fetch('/Datos/Productos.json').then(resp => resp.json()).then(productos => {
-    console.log(productos);
+    
     const Calzado = productos.filter(producto => producto.Categoria === 'Calzado');
-    console.log(Calzado);
+
   
     // Recorrer Accesorios y usar la función del componente Card
     Calzado.forEach(producto => {

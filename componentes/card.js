@@ -7,7 +7,7 @@ export function Card(producto){
              <div class="Card" >
        
                    <div class="text-center">
-                       <img class="imagenes" src=${producto.imagen} alt="" >
+                       <img class="imagenes" src=${producto.imagen} alt="${producto.Producto +" "+ producto.Marca }" >
                    </div>
                
                    <div class="card-body">
@@ -17,13 +17,13 @@ export function Card(producto){
                    <div class="card-footer">
                        <div>
                            <div class="col" style="display: flex; flex-direction: row; gap: 5px; align-items:center">
-                           <h5 class="price">${producto.Precio}</h5>
-                           <input type="number" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px">
+                           <h5 class="price">$${producto.Precio}</h5>
+                           <input type="number" id="cantidad-${producto.id}" class="form-control" min="0" max="5" placeholder="0" step="1" style="height: 40px" >
                        </div>
                    </div>
                    
                    <div>
-                       <button class="btn" id="Comprar">COMPRAR</button>
+                       <button class="comprar" id="${producto.id}">COMPRAR</button>
                    </div>
            
               </div>

@@ -2,8 +2,10 @@ import { navbar } from "../componentes/navbar.js"
 import { Card } from "../componentes/card.js";
 
 
+
 let contCardAcc = document.getElementById("cards");
 let navContenedor = document.querySelector(`header`)
+let ProductosVector = []
 
 /* Codigo para deslogearse */
 
@@ -19,7 +21,7 @@ const LogOut=(user)=>
 
 
 
-
+let carrito
 
 
 /* Carga de navbar y las cards */
@@ -39,7 +41,7 @@ window.addEventListener(`load` , () => {
 })
 
 fetch('/Datos/Productos.json').then(resp => resp.json()).then(productos => {
-    console.log(productos)
+    
     const Calzado = productos.filter(producto => producto.Categoria === 'Calzado');
     const Accesorios = productos.filter(producto => producto.Categoria === 'Accesorios');
     const Indumentaria = productos.filter(producto => producto.Categoria === 'Indumentaria');
@@ -49,16 +51,21 @@ fetch('/Datos/Productos.json').then(resp => resp.json()).then(productos => {
     let Indselecc = Indumentaria.slice(0,3)
    
     const Prodhome = calselecc.concat(Accselecc,Indselecc)
-    console.log(Prodhome)
+    
+   
     
    
     // Recorrer Accesorios y usar la función del componente Card
     Prodhome.forEach(producto => {
         contCardAcc.innerHTML += Card(producto); 
+        ProductosVector.push(producto)
+        localStorage.setItem('StockProductos',JSON.stringify(productos))
       });
     
     
     
     
 })
+
+
     

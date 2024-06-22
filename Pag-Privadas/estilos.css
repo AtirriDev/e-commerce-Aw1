@@ -35,7 +35,9 @@
 .price{font-size: 40px;}
 
 #btnCarrito{background-color:#ffd803; color:black}
+#btnCarrito:hover{ background-color: white; color: black; border : solid black 2px}
 #btnLogOut{background-color:#172C66; color: white}
+#btnLogOut:hover{ background-color: blue; color: white;}
 .btn{ margin-left: 5px;}
 .navbar-brand{padding-inline-start: 10px;  }
 
@@ -63,7 +65,8 @@
 
 #contenido{background-color: #272343;}
 
-#Comprar{background-color: black; width: 100%; color: White;}
+.comprar{background-color: black; width: 100%; color: White; border-radius: 15px;height: 40px;}
+.comprar:hover{background-color: white; color: black;; width: 100%; ; border-radius: 15px;height: 40px; border: solid black 2px}
 
 .imagenes{height: 250px;}
 .Card{ margin-bottom: 60px; }
@@ -75,7 +78,7 @@
 .Banner img{ height: 100%; width: 100%;}
 
 
-.slider2{ width: 100%; height: 25px; margin: auto; overflow: hidden; background-color: #172c66; margin: 0; pa}
+.slider2{ width: 100%; height: 25px; margin: auto; overflow: hidden; background-color: #172c66; margin: 0;}
 
 .track
 {
@@ -110,7 +113,67 @@ p{color: white}
 
 .h5{color:BLACK}
 
+.cantidad-error {
+  background-color: red;
+}
+
+/* condigo de la pagina carrito*/
+
+#grid-venta
+{
+  box-shadow: 5px 6px 37px -13px rgba(51,51,51,0.74);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  padding-top: 30px;
+  height: 150px ;
+  
+  
+}
 
 
+.table
+{
+  box-shadow: 5px 6px 37px -13px rgba(51,51,51,0.74);
+  border-radius: 10px;
+}  
 
+*/
 
+/*Alinear las celdas verticalmete*/
+td {
+  vertical-align: middle;
+}
+
+.btn.fa-solid.fa-trash-can {background-color:#172C66; color: white ;height: 40px;}
+.btn.fa-solid.fa-trash-can:hover{ background-color: blue; color: white;}
+#btn-pagar{ background-color: black; color: white;}
+#btn-pagar:hover{ background-color: white; color: black; border:solid 1px}
+#btn-seguir{background-color:#ffd803; color: black}
+#btn-seguir:hover{background-color: #172C66; color: white; 
+}
+
+/* modal carrito */
+.modal {
+  margin-top: 100px; 
+  
+}
+.modal-header {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.modal-content {
+  background-color: #f0f0f0; 
+  
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center
+}
+.modal-footer a {
+  color: white; 
+  background-color:#172C66;
+  text-decoration: none;
+}
