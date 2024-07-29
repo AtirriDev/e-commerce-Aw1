@@ -65,8 +65,8 @@
 
 #contenido{background-color: #272343;}
 
-.comprar{background-color: black; width: 100%; color: White; border-radius: 15px;height: 40px;}
-.comprar:hover{background-color: white; color: black;; width: 100%; ; border-radius: 15px;height: 40px; border: solid black 2px}
+.comprar{background-color: black; width: 100%; color: White; border-radius: 15px;height: 35px;}
+.comprar:hover{background-color: white; color: black;; width: 100%; ; border-radius: 15px;height: 40px; border: solid black 2px;text-size-adjust: 14px;}
 
 .imagenes{height: 250px;}
 .Card{ margin-bottom: 60px; }
@@ -121,6 +121,7 @@ p{color: white}
 
 #grid-venta
 {
+  
   box-shadow: 5px 6px 37px -13px rgba(51,51,51,0.74);
   border-radius: 10px;
   padding: 10px;
@@ -134,7 +135,7 @@ p{color: white}
 
 .table
 {
-  box-shadow: 5px 6px 37px -13px rgba(51,51,51,0.74);
+  
   border-radius: 10px;
 }  
 
@@ -177,3 +178,42 @@ td {
   background-color:#172C66;
   text-decoration: none;
 }
+.detalle{background-color: white; width: 100%; color: black; border-radius: 15px;height: 25px; border: black solid 2px; margin-bottom: 2px;}
+.detalle:hover{background-color: red; color: white;; width: 100%; ; border-radius: 15px;height: 30px; border: solid red 2px;}
+
+/* estilos del card descripcion producto*/
+ 
+.card{
+  
+  border: none;
+  margin-top: 90px;
+  height: 350px; /* Ajusta la altura deseada en píxeles */
+  width: 100% vw;
+}
+
+.card a {
+  text-decoration: none;
+}
+.comprar2{background-color: black; width: 100%; color: White; border-radius: 15px;height: 55px;}
+.comprar2:hover{background-color: white; color: black;; width: 100%; ; border-radius: 15px;height: 55px; border: solid black 2px}
+
+.carousel-inner .carousel-item img {
+  height: 500px; 
+  width: 400px;
+}
+
+.carousel-control-next-icon.btn {
+  background-color: black; 
+  color: white; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+}
+
+.carousel-control-prev-icon.btn {
+  background-color: black; 
+  color: white; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+}
+
+

@@ -7,7 +7,7 @@ export function Card(producto){
              <div class="Card" >
        
                    <div class="text-center">
-                       <img class="imagenes" src=${producto.imagen} alt="${producto.Producto +" "+ producto.Marca }" >
+                       <img class="imagenes" src=${producto.imagen} alt="${producto.Producto +" "+ producto.Marca }" onclick="irAPagina(${producto.id})" >
                    </div>
                
                    <div class="card-body">
@@ -23,7 +23,8 @@ export function Card(producto){
                    </div>
                    
                    <div>
-                       <button class="comprar" id="${producto.id}">COMPRAR</button>
+                        <button class="detalle" id="${producto.id}"><b>Ver en detalle</></button>
+                        <button class="comprar" id="${producto.id}">COMPRAR</button>
                    </div>
            
               </div>

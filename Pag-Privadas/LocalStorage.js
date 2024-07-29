@@ -31,22 +31,45 @@ window.addEventListener(`load` , () => {
     
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('click', function(event) {
+            const boton = event.target;
+        
+        
+            if (boton.classList.contains('detalle')) {
+                
+                RedirigirDetalle2(boton)
+            }
+            else if (boton.classList.contains('comprar')) {
+                // La función para manejar la compra se ejecuta aquí
+                BotonComprar(boton);
+            }
+            
+        
+            
+        
+        });
+        function RedirigirDetalle2(boton) {
+            // Comprueba si existe el elemento del botón
+            if (boton) {
+              // Redirige a la página de detalles utilizando el ID del botón
+              localStorage.setItem('ProductoSeleccionado',JSON.stringify(boton.id))
+              window.location.href = 'http://127.0.0.1:5502/Pag-Privadas/paginaDesc.html';
+            } else {
+              // Maneja el escenario de falta del botón (por ejemplo, muestra un mensaje de error)
+              console.error('No se encontró el botón "detalle".');
+            }
+          }
+  });
 
-document.addEventListener('click', function(event) {
-    const boton = event.target;
+
+
+
+function RedirigirDetalle(boton){
     
-    if (boton.classList.contains('comprar')) {
-        // La función para manejar la compra se ejecuta aquí
-        BotonComprar(boton);
-    }
-    
-   
-    
-   
-});
-
-
-
+        console.log(`El valor de la variable es: ${boton.id}`);
+       window.location.href = 'http://127.0.0.1:5502/Pag-Privadas/paginaDesc.html';
+}
 
 function BotonComprar(buttonElement) {
     // Identifica el producto asociado al botón
@@ -103,4 +126,6 @@ function BuscarProducto(id){
 
     
 }
+
+
 
