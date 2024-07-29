@@ -14,9 +14,11 @@ let CarritoCompras = []
 
       return JSON.parse(sessionStorage.getItem(usuario));
   }
+
   const LogOut=(user)=>
   {
       sessionStorage.removeItem(user)
+      
   }
 
 window.addEventListener(`load` , () => {
@@ -40,8 +42,12 @@ window.addEventListener(`load` , () => {
 
     /* Logout */
     document.getElementById('btnLogOut').addEventListener('click',()=>{
+      localStorage.clear();
+     
       LogOut('usuario');
+      
       window.location.href = 'http://127.0.0.1:5502/index.html';
+      
     })
     
 
